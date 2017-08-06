@@ -55,7 +55,7 @@ public class PrototypeManager {
         if (prototype == null) {
             throw new Exception("您希望获取的原型还没有注册或已被销毁");
         }
-        return prototype;
+        return prototype.clone();
     }
     
     public synchronized static void goThroughMap() {
