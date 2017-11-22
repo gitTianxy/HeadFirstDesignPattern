@@ -3,15 +3,16 @@ package chap11_proxy_pattern.proxy;
 import chap11_proxy_pattern.subject.Subject;
 
 /**
- * TODO
+ * 静态代理:
+ * 创建一个代理类实现目标类
  * 
  * @author XinyuTian
  * @date 2017年3月11日
  **/
-public class StaticSubjectProxy implements Subject {
+public class SubjectStaticProxy implements Subject {
     private Subject subject;
 
-    public StaticSubjectProxy(Subject subject) {
+    public SubjectStaticProxy(Subject subject) {
         this.subject = subject;
     }
 

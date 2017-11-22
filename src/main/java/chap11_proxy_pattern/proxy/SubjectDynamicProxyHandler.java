@@ -1,10 +1,10 @@
 package chap11_proxy_pattern.proxy;
 
+import chap11_proxy_pattern.subject.Subject;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-
-import chap11_proxy_pattern.subject.Subject;
 
 /**
  * used for dynamic_proxy
@@ -13,10 +13,10 @@ import chap11_proxy_pattern.subject.Subject;
  * @author XinyuTian
  * @date 2017年3月11日
  **/
-public class DynamicSubjectProxyHandler implements InvocationHandler {
+public class SubjectDynamicProxyHandler implements InvocationHandler {
     Subject target;
 
-    public DynamicSubjectProxyHandler(Subject subject) {
+    public SubjectDynamicProxyHandler(Subject subject) {
         super();
         this.target = subject;
     }
